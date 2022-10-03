@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
     private bool Alive = true;
 
-    const float PLAYER_SPEED = 40;
+    const float PLAYER_SPEED = 5;
 
     void Update()
     {
@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
             if (Input.GetKey(KeyCode.A)) moveX -= 1;
             if (Input.GetKey(KeyCode.W)) moveY += 1;
             if (Input.GetKey(KeyCode.S)) moveY -= 1;
-            Vector2 newVelocity = new Vector2(moveX, moveY).normalized * PLAYER_SPEED;
+            Vector2 newVelocity = new Vector2(moveX, moveY) * PLAYER_SPEED;
             
 
             GetComponent<Rigidbody>().velocity = newVelocity;
