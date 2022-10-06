@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,7 +28,7 @@ public class Blink_Script : MonoBehaviour
             }
             catch(System.Exception)
             {
-                throw;
+                UnityEngine.Debug.Log("Exception");
             }
         }
     }

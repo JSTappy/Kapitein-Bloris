@@ -6,7 +6,7 @@ using System.IO.Ports;
 public class MoveUpMoveDown : MonoBehaviour
 {
     public GameObject Ballon;
-    SerialPort portNo = new SerialPort("COM3",9600);
+    SerialPort portNo = new SerialPort("COM6",9600);
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class MoveUpMoveDown : MonoBehaviour
                 }
                 else if(value == "2")
                 {
-                    Ballon.transform.position = new Vector3(0, 0, 0);
+                    Ballon.transform.position = new Vector3(0, -100, 0);
                 }
             }
             catch(System.Exception)
