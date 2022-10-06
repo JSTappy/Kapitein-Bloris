@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 95464338d94ab8f4e802cd892171bc61
+  - enabled: 1
+    path: Assets/Scenes/Koen.unity
+    guid: 5e900950b2170e140b98ddf0cb44fd8d
   m_configObjects: {}
