@@ -1,41 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO.Ports;
 
 public class MoveUpMoveDown : MonoBehaviour
 {
-    public GameObject Ballon;
-    SerialPort portNo = new SerialPort("COM6",9600);
-    // Start is called before the first frame update
-    void Start()
-    {
-        portNo.Open();
-        portNo.ReadTimeout = 5000;
-    }
+    private bool Alive = true;
+    float PLAYER_SPEED = 0.125f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(portNo.IsOpen)
+    private void FixedUpdate() {
+        if (Alive)
         {
-            try
-            {
-                string value = portNo.ReadLine();
-                Debug.Log(value);
-                if(value == "1")
-                {
-                    Ballon.transform.position = new Vector3(0, 100, 0);
-                }
-                else if(value == "2")
-                {
-                    Ballon.transform.position = new Vector3(0, -100, 0);
-                }
-            }
-            catch(System.Exception)
-            {
-                Debug.Log("Error");
-            }
-        }
+            // float moveX = 0;
+            // float moveY = 0;
+            // moveX += 0.2f;
+            // moveY -= 0.1f;
+            // if (Input.GetKey(KeyCode.Space)) moveY *= -2f;
+            // Vector2 newVelocity = new Vector2(moveX, moveY) * PLAYER_SPEED;
+            // GetComponent<Rigidbody>().velocity = newVelocity;
+        } 
     }
 }
