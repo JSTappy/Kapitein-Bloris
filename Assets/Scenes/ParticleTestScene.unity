@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 368364999}
-  smoothSpeed: 0.5
+  smoothSpeed: 3
   offset: {x: 0.16, y: 0, z: 0}
 --- !u!114 &368364997
 MonoBehaviour:
@@ -1509,7 +1509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051300046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.15, y: 22.22, z: 0.0019711256}
+  m_LocalPosition: {x: -31.15, y: 22.41, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 105550321}
