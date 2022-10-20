@@ -6,7 +6,7 @@ using System.IO.Ports;
 
 public class MoveArduino : MonoBehaviour
 {
-    SerialPort portNo=new SerialPort("COM6",9600);
+    SerialPort portNo=new SerialPort("COM3",9600);
     // Start is called before the first frame update
     void Start()
     {
