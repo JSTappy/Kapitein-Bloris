@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SerialConnect.cs
  * 
  * Copyright 2014 Rik Teerling
@@ -65,20 +65,21 @@ public class SerialConnect : MonoBehaviour
 	public string commandToSend = "";			// to send commands to the Arduino
 
 	//Setup parameters to connect to the serial port
-	private static SerialPort serial;
+	public static SerialPort serial;
     public static string portStatus = "";  // can be used for debugging or status
 	private static string incoming;         // the string coming from the serial port
-	private static int counter = 0;         // framecounter needed for calculating when to send a 'command'
+	private static int counter = 0;        // framecounter needed for calculating when to send a 'command'
     
     // List of all com ports available on the system
     public static List<string> comPorts = new List<string>();
     public static bool isPortActive = false;    // true = a comm port is opened
 
+
     void Start()
 	{
         // Open the selected serial port
-		//serial = new SerialPort(port, baudrate, Parity.None, 8, StopBits.One);
-		//OpenConnection();
+		serial = new SerialPort(port, baudrate, Parity.None, 8, StopBits.One);
+		OpenConnection();
 	}
 
 
@@ -102,6 +103,7 @@ public class SerialConnect : MonoBehaviour
                     {
                         incoming = serial.ReadLine();
                         ParseLine(incoming);
+                        BalloonMove();
                         portStatus = "Normal operation";
                     }
                     catch (TimeoutException e)
@@ -110,6 +112,7 @@ public class SerialConnect : MonoBehaviour
                         portStatus = "TimeoutException (try resetting connected device) ";  // +e;
                     }
                 }
+                
             }
             counter++;
             //Debug.Log (values[0]);
@@ -229,6 +232,12 @@ public class SerialConnect : MonoBehaviour
             // Update the port status just in case :)
             portStatus = "# of CommPorts = " + comPorts.Count.ToString();
         }
+    }
+    
+//     //THIS SHOULD BE MOVED TO ITS OWN SCRIPT WHEN EVERYTHING IS WORKING CORRECTLY
+    public virtual void BalloonMove()
+    {
+       
     }
 
 }
