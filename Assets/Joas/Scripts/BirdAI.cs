@@ -5,12 +5,11 @@ using UnityEngine;
 
 public class BirdAI : MonoBehaviour
 {
-    public Transform target;
+    public GameObject birdPrefab;
     private float smoothSpeed = 0.1f;
-    public Vector3 offset;
 
     void Start(){
-        transform.rotation = new Vector3  (0.0f, 90.0f, 0.0f);
+        birdPrefab.transform.rotation = Quaternion.Euler(0, 90, 0);
     }
     
 

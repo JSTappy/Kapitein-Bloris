@@ -139,6 +139,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: birdPrefab
+      value: 
+      objectReference: {fileID: 1996904423}
+    - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
       propertyPath: smoothSpeed
       value: 10
       objectReference: {fileID: 0}
@@ -620,6 +624,11 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
+--- !u!1 &1996904423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1998137239035922210, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+  m_PrefabInstance: {fileID: 415275316}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048218489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,7 +2955,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
