@@ -123,79 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &415275316
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 2048218493}
-    - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: birdPrefab
-      value: 
-      objectReference: {fileID: 1996904423}
-    - target: {fileID: -322110541926902504, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: smoothSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 152.49515
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -24.953491
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 17.141891
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220791711211920792, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1998137239035922210, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-      propertyPath: m_Name
-      value: TerrorBird
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
 --- !u!1 &715088065
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8900cf401cc43468265474830781ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birdPrefab: {fileID: 1998137239035922210, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+  birdPrefab: {fileID: 4134908756489306684, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
   spawnDelay: 3
   spawnDelayRandomness: 0.5
   spawnHeight: 1
@@ -624,11 +551,6 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
---- !u!1 &1996904423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1998137239035922210, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
-  m_PrefabInstance: {fileID: 415275316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048218489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1434,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185610165020047835}
   m_Mesh: {fileID: -8810158590533437579, guid: 76d2f874b60aae1419d590451f74ce57, type: 3}
+--- !u!1001 &4134908756841780699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 152.49515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.141891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306679, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134908756489306684, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
+      propertyPath: m_Name
+      value: TerrorBird
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d7af0ec0857f8845b2f76c02c3dec98, type: 3}
 --- !u!1 &4187584268499322492
 GameObject:
   m_ObjectHideFlags: 0
