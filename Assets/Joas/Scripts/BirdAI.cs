@@ -5,24 +5,47 @@ using UnityEngine;
 
 public class BirdAI : MonoBehaviour
 {
-    public GameObject birdPrefab;
-    private float smoothSpeed = 0.1f;
+    public float speed = 5f;
+    public float turnSpeed = 90f;
+    public float turnDistance = 1f;
+    public float turnDelay = 1f;
+    public float turnDelayRandomness = 0.5f;
 
-    void Start(){
-        birdPrefab.transform.rotation = Quaternion.Euler(0, 90, 0);
-    }
-    
+    private float turnTimer = 0f;
+    private float turnDelayTimer = 0f;
+    private bool turning = false;
 
-    void FixedUpdate()
+    void Update()
     {
-        //Vector3 desiredPosition = target.position + offset;
-        //Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        //transform.position = smoothedPosition;
-        Move();
-    }
-
-    void Move()
-    {
-        transform.position -= new Vector3(smoothSpeed, 0f, 0f);
+        if (turning)
+        {
+            turnTimer += Time.deltaTime;
+            if (turnTimer >= turnDelay)
+            {
+                turnTimer = 0f;
+                turning = false;
+            }
+        }
+        else
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            if (Random.Range(0f, 1f) < 0.5f)
+            {
+                transform.Rotate(Vector3.left * turnSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Rotate(Vector3.left * -turnSpeed * Time.deltaTime);
+            }
+            if (Random.Range(0f, 1f) < 0.5f)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.forward, out hit, turnDistance))
+                {
+                    turning = true;
+                    turnDelayTimer = Random.Range(turnDelay - turnDelayRandomness, turnDelay + turnDelayRandomness);
+                }
+            }
+        }
     }
 }

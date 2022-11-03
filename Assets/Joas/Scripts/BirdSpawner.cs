@@ -31,7 +31,7 @@ public class BirdSpawner : MonoBehaviour
         float spawnWidth = Random.Range(this.spawnWidth - spawnWidthRandomness, this.spawnWidth + spawnWidthRandomness);
 
         Vector3 spawnPosition = transform.position + new Vector3(spawnWidth, spawnHeight, 0f);
-        Vector3 spawnRotation = new Vector3(0f, 90f, 0f);
-        Instantiate(birdPrefab, spawnPosition, Quaternion.identity);
+        Vector3 spawnRotation = new Vector3(0f, 0f, 0f);
+        Instantiate(birdPrefab, spawnPosition, Quaternion.Euler(spawnRotation));
     }
 }
