@@ -103,7 +103,6 @@ public class SerialConnect : MonoBehaviour
                     {
                         incoming = serial.ReadLine();
                         ParseLine(incoming);
-                        BalloonMove();
                         portStatus = "Normal operation";
                     }
                     catch (TimeoutException e)
@@ -232,12 +231,6 @@ public class SerialConnect : MonoBehaviour
             // Update the port status just in case :)
             portStatus = "# of CommPorts = " + comPorts.Count.ToString();
         }
-    }
-    
-//     //THIS SHOULD BE MOVED TO ITS OWN SCRIPT WHEN EVERYTHING IS WORKING CORRECTLY
-    public virtual void BalloonMove()
-    {
-       
     }
 
 }

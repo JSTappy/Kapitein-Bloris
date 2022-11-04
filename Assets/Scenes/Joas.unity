@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 672843154}
+  - component: {fileID: 672843155}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -147,12 +148,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672843153}
   m_LocalRotation: {x: -0, y: -0, z: 0.075843535, w: 0.9971198}
-  m_LocalPosition: {x: 258.53842, y: 14.5512, z: -9.584789}
+  m_LocalPosition: {x: 160.7, y: 8.27, z: -9.584789}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.699}
+--- !u!114 &672843155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672843153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8900cf401cc43468265474830781ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdPrefab: {fileID: 919132148599765505}
+  spawnDelay: 1
+  spawnDelayRandomness: 0.5
+  spawnHeight: 5
+  spawnHeightRandomness: 2
+  spawnWidth: 10
+  spawnWidthRandomness: 5
 --- !u!1 &715088065
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +883,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &919132148599765505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 851162036724966255, guid: 3609b4ec638e6464b8f51ca3bf482dd3, type: 3}
+  m_PrefabInstance: {fileID: 508491748618803566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &1070859536952990545
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1328,7 +1353,6 @@ GameObject:
   - component: {fileID: 5763955015099797489}
   - component: {fileID: 4951283519246210380}
   - component: {fileID: 4951283519246210382}
-  - component: {fileID: 4951283519246210381}
   m_Layer: 0
   m_Name: Ballon
   m_TagString: Untagged
@@ -1352,26 +1376,6 @@ MonoBehaviour:
   maxSpeed: 4
   acceleration: 1
   deceleration: 1
---- !u!114 &4951283519246210381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4951283519246210379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55261b751674484ab2d8360e6a41fd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  COMMAND: b
-  port: COM3
-  baudrate: 115200
-  n: 6
-  timeout: 1000
-  values: 
-  commandToSend: 
-  Balloon: {fileID: 4951283519246210379}
 --- !u!114 &4951283519246210382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,7 +1383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4951283519246210379}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79484a52b7146154da6675f71376963f, type: 3}
   m_Name: 
