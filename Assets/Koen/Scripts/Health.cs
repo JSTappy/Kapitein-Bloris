@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health = 100;
-    // Start is called before the first frame update
+    public int health;
+    public int maxHealth = 3;
+    private HealtBar healthbar;
+
     void Start()
     {
-        
+        healthbar = GameObject.Find("HealthBar").GetComponent<HealtBar>();
+        health = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        healthbar.SetHealth(health);
+    }
+
+    //update take damage when space bar is pressed
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(1);
+        }
     }
 }
