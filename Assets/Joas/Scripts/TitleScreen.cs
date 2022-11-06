@@ -14,6 +14,14 @@ public class TitleScreen : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit");
-        Application.Quit();
+         #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
+    
+    public void LoadDeathScene(){
+        SceneManager.LoadScene("GameOverScene");
     }
 }

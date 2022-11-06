@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Health : MonoBehaviour
 {
@@ -18,10 +20,6 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
         healthbar.SetHealth(health);
     }
 
@@ -31,6 +29,10 @@ public class Health : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(1);
+        }
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 }

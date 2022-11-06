@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Joas.unity
     guid: 25e65b2eaaa2426488d45f01c9ec3fa4
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: b211ac9724f0c3940a723ba121d09815
   m_configObjects: {}
