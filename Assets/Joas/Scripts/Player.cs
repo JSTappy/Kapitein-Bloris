@@ -20,9 +20,9 @@ public class Player : MonoBehaviour
         {
             speed -= deceleration * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.LeftAlt))
         {
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            transform.Translate(Vector3.up * 12.0f * Time.deltaTime);
         }
         else
         {
