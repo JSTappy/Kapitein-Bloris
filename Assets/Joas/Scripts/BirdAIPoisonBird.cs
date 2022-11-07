@@ -1,9 +1,8 @@
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdAISpeedBird : MonoBehaviour
+public class BirdAIPoisonBird : MonoBehaviour
 {
     public float forwardspeed = 1.0f;
     public float upspeed = 1.0f;

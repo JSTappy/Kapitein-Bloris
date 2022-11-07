@@ -33,12 +33,7 @@ public class Player : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "TerrorBird")
-        {
-            Destroy(col.gameObject);
-            health.TakeDamage(1);
-        }
-        if (col.gameObject.name == "SpeedBird")
+        if (col.gameObject.name == "TerrorBird(Clone)")
         {
             Destroy(col.gameObject);
             health.TakeDamage(1);
@@ -48,7 +43,7 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject);
             health.TakeDamage(1);
         }
-        if (col.gameObject.name == "Bird_ROEkoe")
+        if (col.gameObject.name == "PoisonBird(Clone)")
         {
             Destroy(col.gameObject);
             health.TakeDamage(1);

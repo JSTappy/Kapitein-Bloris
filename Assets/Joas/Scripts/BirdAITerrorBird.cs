@@ -21,7 +21,7 @@ public class BirdAITerrorBird : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.back * forwardspeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * forwardspeed * Time.deltaTime);
 
         if (forwardspeed < maxSpeed)
         {
@@ -38,6 +38,10 @@ public class BirdAITerrorBird : MonoBehaviour
         else
         {
             transform.Translate(Vector3.down * downspeed * Time.deltaTime);
+        }
+        if (transform.position.x < 100.0f)
+        {
+            Destroy(gameObject);
         }
     }
 }
