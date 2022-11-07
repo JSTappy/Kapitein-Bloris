@@ -8,7 +8,7 @@ public class EnableDisable : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.LeftAlt))
         {
             objectToEnable.SetActive(true);
         }
