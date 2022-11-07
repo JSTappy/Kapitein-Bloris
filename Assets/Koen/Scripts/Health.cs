@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public int maxHealth = 3;
     private HealtBar healthbar;
 
+
     void Start()
     {
         healthbar = GameObject.Find("HealthBar").GetComponent<HealtBar>();
@@ -17,7 +18,7 @@ public class Health : MonoBehaviour
         healthbar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDamage(int damage)
+    virtual public void TakeDamage(int damage)
     {
         health -= damage;
         healthbar.SetHealth(health);
@@ -26,10 +27,6 @@ public class Health : MonoBehaviour
     //update take damage when space bar is pressed
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(1);
-        }
         if (health <= 0)
         {
             SceneManager.LoadScene("GameOverScene");
