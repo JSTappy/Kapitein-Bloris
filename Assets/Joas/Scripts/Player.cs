@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.F))
         {
-            transform.Translate(Vector3.up * 12.0f * Time.deltaTime);
+            transform.Translate(Vector3.up * 10.0f * Time.deltaTime);
         }
         else
         {
@@ -47,6 +47,11 @@ public class Player : MonoBehaviour
         {
             Destroy(col.gameObject);
             health.TakeDamage(1);
+        }
+        if (col.gameObject.tag == "Ground")
+        {
+            health.TakeDamage(1);
+            transform.position = new Vector3(120f, -7f, 0);
         }
     }
 

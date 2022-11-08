@@ -26,5 +26,14 @@ public class CountdownTimer : MonoBehaviour
             currentTime = 0;
             SceneManager.LoadScene("EndScene");
         }
+
+        if (currentTime >= 100 && currentTime <= 101)
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
+        if (currentTime >= 340 && currentTime <= 341)
+        {
+           Application.Quit();
+        }
     }
 }
