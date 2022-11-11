@@ -227,10 +227,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 9197005968099090501, guid: 9901ae447ed79e743a686e5d242359b7, type: 3}
-  spawnDelay: 7
+  spawnDelay: 15
   spawnDelayRandomness: 8.33
   spawnHeight: 22.04
-  spawnHeightRandomness: 3.29
+  spawnHeightRandomness: 20.2
   spawnWidth: 0
   spawnWidthRandomness: 0
 --- !u!4 &20032900
@@ -1749,7 +1749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858652302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 225.8, y: 4.7402444, z: -0.42205092}
+  m_LocalPosition: {x: 228.94, y: 4.7402444, z: -0.42205092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1191333217}
@@ -2215,10 +2215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 8247314727306408295, guid: 3fe0f2485be33eb4f9166bc075cb8444, type: 3}
-  spawnDelay: 5
+  spawnDelay: 11
   spawnDelayRandomness: 6.77
-  spawnHeight: 25.26
-  spawnHeightRandomness: 2
+  spawnHeight: 16.4
+  spawnHeightRandomness: 16.49
   spawnWidth: 0
   spawnWidthRandomness: 0
 --- !u!1001 &1191520043
@@ -3842,7 +3842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 60
+  startingTime: 420
   countdownText: {fileID: 2142914175}
 --- !u!1 &17694977616057693
 GameObject:

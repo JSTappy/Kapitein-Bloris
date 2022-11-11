@@ -27,13 +27,9 @@ public class CountdownTimer : MonoBehaviour
             SceneManager.LoadScene("EndScene");
         }
 
-        if (currentTime >= 100 && currentTime <= 101)
+        if (Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.T))
         {
-            SceneManager.LoadScene("TitleScreen");
-        }
-        if (currentTime >= 340 && currentTime <= 341)
-        {
-           Application.Quit();
+            currentTime = 10;
         }
     }
 }
