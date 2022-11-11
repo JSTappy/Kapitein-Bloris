@@ -227,10 +227,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 9197005968099090501, guid: 9901ae447ed79e743a686e5d242359b7, type: 3}
-  spawnDelay: 7
-  spawnDelayRandomness: 8.33
-  spawnHeight: 22.04
-  spawnHeightRandomness: 3.29
+  spawnDelay: 10
+  spawnDelayRandomness: 13
+  spawnHeight: 30
+  spawnHeightRandomness: 30
   spawnWidth: 0
   spawnWidthRandomness: 0
 --- !u!4 &20032900
@@ -260,10 +260,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40443178}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000011615019, y: 6.16974, z: 0.073641114}
 --- !u!4 &86843894 stripped
 Transform:
@@ -287,9 +287,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (1)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -339,7 +347,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &212008720 stripped
 GameObject:
@@ -354,10 +363,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212008720}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000021449787, y: 6.169744, z: 0.0736407}
 --- !u!1 &212091824
 GameObject:
@@ -447,10 +456,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280687422}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000025920135, y: 6.16974, z: 0.073640876}
 --- !u!1001 &291446545
 PrefabInstance:
@@ -931,20 +940,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
-  m_Center: {x: 0.000000865056, y: 6.169741, z: 0.07364076}
---- !u!65 &544381366
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544381364}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: 0.000000865056, y: 6.169741, z: 0.07364076}
 --- !u!1 &551948417 stripped
 GameObject:
@@ -1050,9 +1046,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (6)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -1114,7 +1118,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &676085639 stripped
 GameObject:
@@ -1129,10 +1134,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676085639}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: 0.0000018187303, y: 6.16974, z: 0.07364028}
 --- !u!1 &690297724
 GameObject:
@@ -1146,7 +1151,6 @@ GameObject:
   - component: {fileID: 690297729}
   - component: {fileID: 690297728}
   - component: {fileID: 690297727}
-  - component: {fileID: 690297726}
   m_Layer: 0
   m_Name: Plane (4)
   m_TagString: Untagged
@@ -1162,25 +1166,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690297724}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: 519.0032, y: -402, z: 1461.4274}
+  m_LocalPosition: {x: 519.0032, y: -392, z: 1461.4274}
   m_LocalScale: {x: 100, y: 100, z: 159}
   m_Children: []
   m_Father: {fileID: 723168206}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 180}
---- !u!114 &690297726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690297724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ae8206997f2b6418c10e4c042f17a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!65 &690297727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1470,9 +1461,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (3)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -1534,7 +1533,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &741069179
 GameObject:
@@ -1642,10 +1642,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741854457}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000039927227, y: 6.169744, z: 0.07364064}
 --- !u!1001 &770211430
 PrefabInstance:
@@ -1909,23 +1909,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876475049}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
-  m_Center: {x: 0.0000022955674, y: 6.1697416, z: 0.073640995}
---- !u!65 &876475051
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876475049}
-  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: 0.0000022955674, y: 6.1697416, z: 0.073640995}
 --- !u!1001 &915512070
 PrefabInstance:
@@ -1934,9 +1921,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (4)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -1998,7 +1993,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &927061224 stripped
 GameObject:
@@ -2013,10 +2009,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927061224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000007442694, y: 6.169742, z: 0.073640935}
 --- !u!1001 &955055216
 PrefabInstance:
@@ -2025,9 +2021,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (9)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -2089,7 +2093,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &981127796
 GameObject:
@@ -2325,7 +2330,6 @@ GameObject:
   - component: {fileID: 1095051272}
   - component: {fileID: 1095051271}
   - component: {fileID: 1095051270}
-  - component: {fileID: 1095051269}
   m_Layer: 0
   m_Name: Plane (5)
   m_TagString: Untagged
@@ -2341,25 +2345,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095051267}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: -279.19678, y: -402, z: 1461.4274}
+  m_LocalPosition: {x: -279.19678, y: -392, z: 1461.4274}
   m_LocalScale: {x: 100, y: 100, z: 159}
   m_Children: []
   m_Father: {fileID: 723168206}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 180}
---- !u!114 &1095051269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095051267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ae8206997f2b6418c10e4c042f17a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!65 &1095051270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2503,9 +2494,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (5)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -2567,7 +2566,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!64 &1167723812
 MeshCollider:
@@ -2627,10 +2627,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 8247314727306408295, guid: 3fe0f2485be33eb4f9166bc075cb8444, type: 3}
-  spawnDelay: 5
-  spawnDelayRandomness: 6.77
-  spawnHeight: 25.26
-  spawnHeightRandomness: 2
+  spawnDelay: 15
+  spawnDelayRandomness: 20
+  spawnHeight: 30
+  spawnHeightRandomness: 30
   spawnWidth: 0
   spawnWidthRandomness: 0
 --- !u!1001 &1191520043
@@ -2720,10 +2720,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212789855}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000005654555, y: 6.169741, z: 0.07364052}
 --- !u!64 &1213082579
 MeshCollider:
@@ -2899,9 +2899,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (8)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -2963,7 +2971,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1001 &1333628187
 PrefabInstance:
@@ -3046,9 +3055,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (11)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -3110,7 +3127,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1001 &1388985000
 PrefabInstance:
@@ -3440,10 +3458,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587672229}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000035754902, y: 6.16974, z: 0.07364046}
 --- !u!64 &1589088278
 MeshCollider:
@@ -3638,9 +3656,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (7)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -3702,7 +3728,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &1797512705
 GameObject:
@@ -3716,7 +3743,6 @@ GameObject:
   - component: {fileID: 1797512710}
   - component: {fileID: 1797512709}
   - component: {fileID: 1797512708}
-  - component: {fileID: 1797512707}
   m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
@@ -3732,25 +3758,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797512705}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: 1318.9032, y: -402, z: 1461.4274}
+  m_LocalPosition: {x: 1318.9032, y: -392, z: 1461.4274}
   m_LocalScale: {x: 100, y: 100, z: 159}
   m_Children: []
   m_Father: {fileID: 723168206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 180}
---- !u!114 &1797512707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797512705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ae8206997f2b6418c10e4c042f17a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!65 &1797512708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3947,9 +3960,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (10)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -4011,7 +4032,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!4 &1964998461 stripped
 Transform:
@@ -4156,10 +4178,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031429271}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000031284553, y: 6.16974, z: 0.07364117}
 --- !u!1001 &2040752088
 PrefabInstance:
@@ -4168,9 +4190,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_Name
-      value: Desert (2)
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_TagString
@@ -4232,7 +4262,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!1 &2053325842
 GameObject:
@@ -4327,10 +4358,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054568631}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000012, y: 6.000002, z: 0.14728478}
+  m_Size: {x: 2, y: 6, z: 0.05}
   m_Center: {x: -0.0000016085368, y: 6.16974, z: 0.0736404}
 --- !u!1001 &2062501793
 PrefabInstance:
@@ -6261,29 +6292,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723168206}
     m_Modifications:
-    - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
-      propertyPath: m_Name
-      value: Desert
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Size.z
+      value: 0.07541394
+      objectReference: {fileID: 0}
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Center.x
+      value: -0.36712834
+      objectReference: {fileID: 0}
+    - target: {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.021836411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673129040192495365, guid: 4a97912b52d00454785316887ed6665e, type: 3}
+      propertyPath: speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6701240029527522812, guid: 4a97912b52d00454785316887ed6665e, type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7890056246204718531, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7890056246204718531, guid: 4a97912b52d00454785316887ed6665e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7890056246204718531, guid: 4a97912b52d00454785316887ed6665e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7890056246204718531, guid: 4a97912b52d00454785316887ed6665e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7890056246204718531, guid: 4a97912b52d00454785316887ed6665e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6325,7 +6360,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 876475050, guid: 4a97912b52d00454785316887ed6665e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a97912b52d00454785316887ed6665e, type: 3}
 --- !u!23 &8544783547097578711
 MeshRenderer:

@@ -5,10 +5,10 @@ using UnityEngine;
 public class BirdSpawner : MonoBehaviour
 {
     public GameObject birdPrefab;
-    public float spawnDelay = 1f;
-    public float spawnDelayRandomness = 0.5f;
+    public float spawnDelay = 3f;
+    public float spawnDelayRandomness = 4f;
     public float spawnHeight = 5f;
-    public float spawnHeightRandomness = 2f;
+    public float spawnHeightRandomness = 0.1f;
     public float spawnWidth = 10f;
     public float spawnWidthRandomness = 5f;
 
