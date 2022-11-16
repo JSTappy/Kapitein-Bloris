@@ -27,9 +27,14 @@ public class Health : MonoBehaviour
     //update take damage when space bar is pressed
     void Update()
     {
-        if (health <= 0)
+        if (health <= 0 && SceneManager.GetActiveScene().name == "Lvl1")
         {
-            SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene("Lvl1GameOver");
         }
+        if (health <= 0 && SceneManager.GetActiveScene().name == "Lvl2")
+        {
+            SceneManager.LoadScene("Lvl2GameOver");
+        }
+
     }
 }

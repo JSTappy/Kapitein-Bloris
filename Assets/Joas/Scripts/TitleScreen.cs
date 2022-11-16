@@ -8,7 +8,6 @@ public class TitleScreen : MonoBehaviour
     public void LoadLevel(string level)
     {
         SceneManager.LoadScene(level);
-
     }
 
     public void QuitGame()
