@@ -4765,7 +4765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 420
+  startingTime: 360
   countdownText: {fileID: 2142914175}
 --- !u!1 &17694977616057693
 GameObject:
@@ -5519,7 +5519,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4951283519246210379}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79484a52b7146154da6675f71376963f, type: 3}
   m_Name: 

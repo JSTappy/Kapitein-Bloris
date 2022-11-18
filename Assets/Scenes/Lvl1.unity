@@ -2819,7 +2819,6 @@ GameObject:
   - component: {fileID: 1095051272}
   - component: {fileID: 1095051271}
   - component: {fileID: 1095051270}
-  - component: {fileID: 1095051269}
   m_Layer: 0
   m_Name: Plane (5)
   m_TagString: Untagged
@@ -2841,19 +2840,6 @@ Transform:
   m_Father: {fileID: 723168206}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 180}
---- !u!114 &1095051269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095051267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ae8206997f2b6418c10e4c042f17a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!65 &1095051270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5964,7 +5950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 420
+  startingTime: 300
   countdownText: {fileID: 2142914175}
 --- !u!1 &17694977616057693
 GameObject:
@@ -6752,7 +6738,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5763955015099797489}
   - component: {fileID: 4951283519246210380}
-  - component: {fileID: 4951283519246210382}
   - component: {fileID: 4951283519246210381}
   - component: {fileID: 4951283519246210383}
   m_Layer: 0
@@ -6793,25 +6778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 3
---- !u!114 &4951283519246210382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4951283519246210379}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79484a52b7146154da6675f71376963f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  COMMAND: b
-  port: COM3
-  baudrate: 115200
-  n: 6
-  timeout: 1000
-  values: 
-  commandToSend: 
 --- !u!54 &4951283519246210383
 Rigidbody:
   m_ObjectHideFlags: 0
